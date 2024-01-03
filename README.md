@@ -17,22 +17,27 @@ Please complete the instructions below:
 
 1. Should have a docker file with the steps to perform when the package is deployed (sample-packages/docker)
 2. Build docker - > Navigate to the docker file folder and build docker image
+
 SYNTAX: docker build . -t IMAGENAME:VERSION
 EXAMPLE: docker build . -t publish-pkg-registry:v1
 
 3. Run the docker image
+
 SYNTAX: docker run IMAGENAME:VERSION
 EXAMPLE: docker run publish-pkg-registry:v1
 
 4. Login Docker
+
 SYNTAX: docker login docker.pkg.github.com --username USERNAME
 EXAMPLE: docker login docker.pkg.github.com --username xyzjdf
 
 5. Tag docker image
+
 SYNTAX: docker tag IMAGENAME:VERSION docker.pkg.github.com/USERNAME/REPONAME/IMAGENAME:VERSION
 EXAMPLE: docker tag publish-pkg-registry:v1 docker.pkg.github.com/xyzjdf/exercise-publish-package/publish-pkg-registry:v1
 
 6. Push package 
+
 SYNTAX: docker push IMAGENAME:VERSION docker.pkg.github.com/USERNAME/REPONAME/IMAGENAME:VERSION
 EXAMPLE: docker push publish-pkg-registry:v1 docker.pkg.github.com/xyzjdf/exercise-publish-package/publish-pkg-registry:v1
 
