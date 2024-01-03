@@ -18,8 +18,8 @@ Please complete the instructions below:
 1. Should have a docker file with the steps to perform when the package is deployed (sample-packages/docker)
 2. Build docker - > Navigate to the docker file folder and build docker image
 
-SYNTAX: docker build . -t IMAGENAME:VERSION
-EXAMPLE: docker build . -t publish-pkg-registry:v1
+- SYNTAX: docker build . -t IMAGENAME:VERSION
+- EXAMPLE: docker build . -t publish-pkg-registry:v1
 
 3. Run the docker image
 
