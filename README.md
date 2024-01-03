@@ -23,23 +23,23 @@ Please complete the instructions below:
 
 3. Run the docker image
 
-SYNTAX: docker run IMAGENAME:VERSION
-EXAMPLE: docker run publish-pkg-registry:v1
+- SYNTAX: docker run IMAGENAME:VERSION
+- EXAMPLE: docker run publish-pkg-registry:v1
 
 4. Login Docker
 
-SYNTAX: docker login docker.pkg.github.com --username USERNAME
-EXAMPLE: docker login docker.pkg.github.com --username xyzjdf
+- SYNTAX: docker login docker.pkg.github.com --username USERNAME
+- EXAMPLE: docker login docker.pkg.github.com --username xyzjdf
 
 5. Tag docker image
 
-SYNTAX: docker tag IMAGENAME:VERSION docker.pkg.github.com/USERNAME/REPONAME/IMAGENAME:VERSION
-EXAMPLE: docker tag publish-pkg-registry:v1 docker.pkg.github.com/xyzjdf/exercise-publish-package/publish-pkg-registry:v1
+- SYNTAX: docker tag IMAGENAME:VERSION docker.pkg.github.com/USERNAME/REPONAME/IMAGENAME:VERSION
+- EXAMPLE: docker tag publish-pkg-registry:v1 docker.pkg.github.com/xyzjdf/exercise-publish-package/publish-pkg-registry:v1
 
 6. Push package 
 
-SYNTAX: docker push IMAGENAME:VERSION docker.pkg.github.com/USERNAME/REPONAME/IMAGENAME:VERSION
-EXAMPLE: docker push publish-pkg-registry:v1 docker.pkg.github.com/xyzjdf/exercise-publish-package/publish-pkg-registry:v1
+- SYNTAX: docker push IMAGENAME:VERSION docker.pkg.github.com/USERNAME/REPONAME/IMAGENAME:VERSION
+- EXAMPLE: docker push publish-pkg-registry:v1 docker.pkg.github.com/xyzjdf/exercise-publish-package/publish-pkg-registry:v1
 
 ## Troubleshooting
 
