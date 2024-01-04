@@ -7,12 +7,11 @@ on:
 
 jobs:
   grade-learner:
+    if: github.event_name == 'registry_package' # Apply additional filters as needed
     runs-on: ubuntu-latest
     steps:
-      - name: Print Event Name
-        run: echo "Triggered Event:${{ github.event_name }}"
-      - if: github.event_name == 'registry_package' # Apply additional filters as needed
       - uses: actions/checkout@v2
+      
       - name: Grade exercise-publish-package activity
         id: events
         uses: ./.github/actions/local-action
